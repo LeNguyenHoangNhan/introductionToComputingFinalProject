@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Deep learning in a nutshell</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="UTF-8" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <article id="main">
+            <div class="article-cover">
+                <img src="/deeplearning.jpg" class="cover-img" />
+            </div>
+            <h1 class="title">Deep learning in a nutshell</h1>
+            <p class="time-location"><i>Ho Chi Minh City - Jan 01, 2021</i></p>
+            <section class="intro">
+                <h2>Introduction</h2>
+                <p class="content">
+                    Deep Learning, a sub-area of Machine Learning has
+                    been applied in many tasks such as Computer Vision,
+                    Natural Language Processing, Speech Recognition, etc
+                    with noticeably high accuracy. Deep Learning has experienced a significant evolution and has become
+                    a stateof-the-art technique in processing a huge amount of
+                    data and imitating the thinking process. In this report, we want to represent a thorough view of
+                    this term.
+                    Technically, the field of Artificial Intelligence is focusing
+                    on
+                </p>
+            </section>
+            <section class="body">
+                <h2>What is deep learning</h2>
+                <p class="content">
+                    Let’s start with most common term that you have heard
+                    so far - Artificial Intelligence (AI). Artificial Intelligence
+                    can be simply defined as an ability to process information to inform future decisions. Machine
+                    Learning, in
+                    general, concentrates on how to create algorithms that
+                    let machines have ability to learn from historical data
+                    without being explicitly programmed.
+                </p>
+                <div class="content-img-wrapper">
+                    <img src="layer.png" class="content-img" />
+                    <p class="content-img-caption">
+                        <i>General view of AI, Machine Learning, and Deep Learning</i>
+                    </p>
+                </div>
+
+                <p class="content">
+                    Finally, Deep Learning is a branch of Machine Learning,
+                    using the Artificial Neural Networks (ANN) to adapt and learn from a vast of data. The main
+                    difference between Deep Learning and Machine Learning is the
+                    way that data is structured. Machine Learning algorithms
+                    almost require labeled data and they are designed to
+                    understand the labeled data in order to predict future
+                    result. Whereas, Deep Learning do not required structured data (or human intervention) because they
+                    almost rely on layers of ANNs.
+                </p>
+                <div class="content-img-wrapper">
+                    <img src="network.png" class="content-img" />
+                    <p class="content-img-caption">
+                        <i>Artificial Network Architecture</i>
+                    </p>
+                </div>
+                <p class="content">
+                <blockquote class="quotes">
+                    <i>
+                        "When you hear the term ‘Deep Learning’, just
+                        think of a large Deep Neural Network. ‘Deep’
+                        refers to the number of layers typically and so
+                        this is kind of the popular term that’s have been
+                        adopted in the press. I think of them as Deep Neural Networks generally."
+                    </i>
+                    <p class="quote-author">−Jeff Dean, Google Senior Fellow in the System and Infrastructure Group</p>
+                </blockquote>
+                </p>
+            </section>
+            <section class="body">
+                <h2>AI winter to an evolution</h2>
+                <p class="content">
+                    The history of Deep Learning can be traced back
+                    to 1943, when Walter Pitts and Warren McCulloch
+                    created a computer model based on the neural networks
+                    of the human brain. A combination of algorithms and
+                    mathematics, called ‘threshold logic’, were used to
+                    mimic the thought process. From that time forward,
+                    Deep Learning has evolved steadily, with only two
+                    significant break-through in its development. Both
+                    were tied to the infamous Artificial Intelligence winters.
+                </p>
+                <p class="content">The earliest efforts in developing Deep Learning algorithms dated to 1965, when
+                    Alexey Grigoryevich
+                    Ivakhnenko used models with polynomial (complication equations) activation functions, which were
+                    subsequently analysed statistically. During the 1970’s
+                    a brief setback was felt into the development of AI,
+                    lack of funding limited both Deep Learning and
+                    Artificial Intelligence research, but individuals carried
+                    on researches without funding through those difficult
+                    years.
+                </p>
+                <p class="content">
+                    Convolutional Neural Networks (CNNs) were first
+                    used by Kunihiko Fukushima who designed the neural
+                    networks with multiple pooling and convolutional
+                    layers. He developed an ANN, called Neocognitron
+                    in 1979, which used a multi-layered and hierarchical
+                    design
+                </p>
+                <p class="content">
+                    In 1970’s, Backpropagation, was developed which
+                    uses errors into training Deep Learning models. Backpropagation became popular when Seppo Linnainmaa
+                    wrote his master’s thesis, including a FORTRAN
+                    code for backpropagation. Though developed in the
+                    1970’s, the concept was not applied to neural networks
+                    until 1985 when Hinton and Rumelhart, Williams
+                    demonstrated backpropagation in a neural network
+                    which could provide interesting distribution representations. Yann LeCun explained the first
+                    practical
+                    demonstration of backpropagation at Bell Labs in 1989
+                    by combining CNNs with back propagation to read
+                    handwritten digits. The combination of CNNs with
+                    backpropagation system was used to read the numbers
+                    of handwritten checks.
+                </p>
+                <p class="content">
+                    1985−90s kicked the second lull into Artificial Intelligence which effected research for neural
+                    networks
+                    and Deep Learning. Going on over the years, in 1995
+                    Vladimir Vapnik and Dana Cortes developed the
+                    Support Vector Machine (SVM) which is a system
+                    for mapping and recognizing similar data. Long
+                    Short-Term Memory (LSTM) was developed in 1997
+                    by Juergen Schmidhuber and Sepp Hochreiter for
+                    Recurrent Neural Networks (RNNs).
+                </p>
+                <p class="content">
+                    The next significant Deep Learning advancement
+                    was in 1999 when computers adopted the speed of the
+                    GPU processing. Faster processing meant increased
+                    computational speeds of 1000 times over a 10-year
+                    span. This era meant neural networks began competing
+                    with SVMs Neural networks offered better results using
+                    the same data, though slow to a SVM.
+                </p>
+                <p class="content">
+                    The Vanishing Gradient Problem came out in the
+                    year 2000 when “features” (lessons) formed in lower
+                    layers were not being learned by the upper layers since
+                    no learning signal reached these layers were discovered.
+                    This was not a fundamental problem for all neural
+                    networks but is restricted to only Gradient-Based
+                    Learning methods. This problem turned out to be
+                    certain activation functions which condensed their
+                    input and reduced the output range in a chaotic fashion. This led to large areas of input mapped
+                    over
+                    an extremely small range.
+                </p>
+                <p class="content">
+                    Fei-Fei Li, an AI professor at Stanford launched
+                    ImageNet in 2009 assembling a free database of more
+                    than 14 million labeled images. These images were the
+                    inputs to train neural nets. The speed of GPUs had
+                    increased significantly by 2011, making it possible to
+                    train CNNs without the need of layer by layer pretraining. Deep learning holds significant
+                    advantages
+                    into efficiency and speed.
+                </p>
+                <p class="content">
+                    In 2012, Google Brain released the results of an
+                    unusual free-spirited project called the Cat Experiment
+                    which explored the difficulties of Unsupervised Learning. Deep learning deploys Supervised Learning,
+                    which
+                    means the CNNs are trained using labeled data like the
+                    images from ImageNet. This experiment used a neural
+                    net which was spread over 1,000 computers where ten
+                    million unlabelled images were taken randomly from
+                    YouTube, as inputs to the training software. From
+                    that year onwards, unsupervised learning remains a
+                    significant goal in the field of Deep Learning.
+                </p>
+                <p class="content">
+                <blockquote class="quotes">
+                    <i>
+                        "I think people need to understand that Deep
+                        Learning is making a lot of things, behind-thescenes, much beter."
+                    </i>
+                    <p class="quote-author">−Jeff Dean, Google Senior Fellow in the System and Infrastructure Group</p>
+                </blockquote>
+                </p>
+                <section class="sub">
+                    <h3>A Timeline of deep learning development</h3>
+                    <ul class="list">
+                        <li class="list-item">
+                            <strong>1960s:</strong> Shallow Neural Networks.
+                        </li>
+                        <li class="list-item">
+                            <strong>1960−70s:</strong> Backpropagation emerges.
+                        </li>
+                        <li class="list-item">
+                            <strong>1974−80s:</strong> First AI Winter.
+                        </li>
+                        <li class="list-item">
+                            <strong>1980s:</strong> Convolution emerges
+                        </li>
+                        <li class="list-item">
+                            <strong>1987−93:</strong> Second AI Winter.
+                        </li>
+                        <li class="list-item">
+                            <strong>1990s:</strong> Unsupervised Deep Learning.
+                        </li>
+                        <li class="list-item">
+                            <strong>1990s−2000s:</strong> Supervised Deep Learning
+                        </li>
+                        <li class="list-item">
+                            <strong>2000s−:</strong> Modern Deep Learning
+                        </li>
+                    </ul>
+                </section>
+            </section>
+            <section class="content">
+                <h2>Deep learning architectures</h2>
+                <section class="sub">
+                    <h3 class="sub-title">Convulational neural networks (CNNs)</h3>
+                    <p class="content">
+                        Convolutional Neural Networks (CNNs) are one
+                        of the most popular architectures desgined for various
+                        Computer Vision tasks such as Image Classification,
+                        Image Recognition, etc. by Kunihiko Fukushima.
+                    </p>
+                    <p class="content">
+                        A Convolutional Neural Network (ConvNet/CNN)
+                        is a Deep Learning algorithm which can take in an
+                        input image, assign importance (learnable weights
+                        and biases) to various aspects/objects in the image and be able to differentiate one from the
+                        other. The pre-processing required in a ConvNet
+                        is much lower as compared to other classification
+                        algorithms. While in primitive methods filters are
+                        hand-engineered, with enough training, ConvNets
+                        have the ability to learn these filters/characteristics.
+                    </p>
+                    <div class="content-img-wrapper">
+                        <img src="cnns.jpg" class="content-img" />
+                        <p class="content-img-caption">
+                            <i>Convolutional Neural Networks for Image Recognition</i>
+                        </p>
+                    </div>
+                    <p class="content">
+                        The architecture of a ConvNet is analogous to
+                        that of the connectivity pattern of Neurons in the
+                        Human Brain and was inspired by the organization
+                        of the Visual Cortex. Individual neurons respond to
+                        stimuli only in a restricted region of the visual field
+                        known as the Receptive Field. A collection of such
+                        fields overlap to cover the entire visual area.
+                    </p>
+                </section>
+                <section class="sub">
+                    <h3 class="sub-title">Recurrent neural networks (RNNs)</h3>
+                    <p class="content">
+                        A Recurrent Neural Network (RNNs) is a type of
+                        ANNs which uses sequential data or time series data.
+                        These Deep Learning algorithms are commonly used
+                        for ordinal or temporal problems, such as Language
+                        Translation, Natural Language Processing (NLP),
+                        Speech Recognition, and Image Captioning; they are
+                        incorporated into popular applications such as Siri,
+                        voice search, and Google Translate. Like Feedforward
+                        and Convolutional Neural Networks (CNNs), Recurrent
+                        Neural Networks utilize training data to learn. They
+                        are distinguished by their “memory” as they take information from prior inputs to influence the
+                        current input
+                        and output. While traditional Deep Neural Networks
+                        assume that inputs and outputs are independent of
+                        each other, the output of recurrent neural networks depend on the prior elements within the
+                        sequence. While
+                        future events would also be helpful in determining the
+                        output of a given sequence, unidirectional Recurrent
+                        Neural Networks cannot account for these events in
+                        their predictions. Another distinguishing characteristic
+                        of Recurrent Neural Networks is that they share
+                        parameters across each layer of the network. While
+                        Feedforward Networks have different weights across
+                        each node, Recurrent Neural Networks share the same
+                        weight parameter within each layer of the network.
+                    </p>
+                    <div class="content-img-wrapper">
+                        <img src="rnn.png" class="content-img" />
+                        <p class="content-img-caption">
+                            <i>Comparison between Recurrent Neural Networks and Feedforward Neural Networks</i>
+                        </p>
+                    </div>
+                    <div class="content">
+                        <h5 class="subsub-title">Types of recurrent neural networks</h5>
+                        <ul class="list">
+                            <li class="list-item">
+                                One−to−One
+                            </li>
+                            <li class="list-item">
+                                One−to−Many
+                            </li>
+                            <li class="list-item">
+                                Many−to−One
+                            </li>
+                            <li class="list-item">
+                                Many−to−Many
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </section>
+                <section class="sub">
+                    <h3 class="sub-title">Long-short term memory (LSTM)</h3>
+                    <p class="content">
+                        Long-Short Term Memory Networks (LSTMs) – are a
+                        special kind of RNNs, capable of learning long-term
+                        dependencies. They were introduced by Hochreiter
+                        Schmidhuber (1997), and were refined and popularized by many people. They work tremendously
+                        well on a large variety of problems, and are now
+                        widely used. LSTMs are explicitly designed to avoid
+                        the long-term dependency problem. Remembering
+                        information for long periods of time is practically
+                        their default behavior, not something they struggle
+                        to learn. All Recurrent Neural Networks have the
+                        form of a chain of repeating modules of neural network. In standard RNNs, this repeating module
+                        will
+                        have a very simple structure, such as a single tanh layer.
+                    </p>
+                    <div class="content-img-wrapper">
+                        <img src="lstm.png" class="content-img" />
+                        <p class="content-img-caption">
+                            <i>Comparison between Recurrent Neural Networks and Feedforward Neural Networks</i>
+                        </p>
+                    </div>
+                    <div class="content">
+                        <h5 class="subsub-title">Applications of LSTMs:</h5>
+                        <ul class="list">
+                            <li class="list-item">
+                                Speech Recognition − performed by Google Assistant, Microsoft Cortana, Apple Siri.
+                            </li>
+                            <li class="list-item">
+                                • Machine Translation − performed by Google
+                                Translate.
+                            </li>
+                            <li class="list-item">
+                                Music Generation − done by Bao Dai, Research
+                                Scientist at Knorex, Teaching VietAI.
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="sub">
+                    <h3 class="sub-title">Autoencoder</h3>
+                    <p class="content">
+                        Autoencoders are an unsupervised learning technique in
+                        which we leverage neural networks for the task of representation learning. Specifically, we’ll
+                        design a neural
+                        network architecture such that we impose a bottleneck
+                        in the network which forces a compressed knowledge
+                        representation of the original input. If the input features were each independent of one
+                        another, this compression and subsequent reconstruction would be a very
+                        difficult task. However, if some sort of structure exists
+                        in the data (ie. correlations between input features), this structure can be learned and
+                        consequently leveraged when forcing the input through the network’s bottleneck.
+                    </p>
+                    <div class="content-img-wrapper">
+                        <img src="autoencoder.png" class="content-img" />
+                        <p class="content-img-caption">
+                            <i>Autoencoder for reconstructing image</i>
+                        </p>
+                    </div>
+                    <p class="content">
+                        As we can observe, we can take an unlabeled dataset
+                        and frame it as a Supervised Learning problem tasked
+                        with outputs, a reconstruction of inputs. This network
+                        can be trained by minimizing the reconstruction error,
+                        which measures the difference between our initial input
+                        and the final result. The bottleneck is a key attribute
+                        of our network desgin; with the presence of bottleneck,
+                        our network could easily learn to simply memorize the
+                        input values by passing these values along through the
+                        network.
+                    </p>
+                    <div class="content-img-wrapper">
+                        <img src="autoencoder2.png" class="content-img" />
+                        <p class="content-img-caption">
+                            <i>A construction of Autoencoder model</i>
+                        </p>
+                    </div>
+                    <div class="content">
+                        <h5 class="subsub-title">Applications of Autoencoder:</h5>
+                        <ul class="list">
+                            <li class="list-item">
+                                Anomaly Detection.
+                            </li>
+                            <li class="list-item">
+                                Data Denoising (e.g. images, audio, etc.).
+                            </li>
+                            <li class="list-item">
+                                Image Inpainting. Retrieval.
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="sub">
+                    <h3 class="sub-title">Generative adversarial network (GAN)</h3>
+                    <p class="content">
+                        Generative Adversarial Networks, (GANs), are an approach to generative modeling using Deep
+                        Learning
+                        methods, such as Convolutional Neural Networks.
+                    </p>
+                    <div class="content-img-wrapper">
+                        <img src="gan1.png" class="content-img" />
+                        <p class="content-img-caption">
+                            <i>The Generative Adversarial Networks</i>
+                        </p>
+                    </div>
+                    <p class="content">
+                        Generative modeling is an Unsupervised Learning
+                        task in Machine Learning that involves automatically
+                        discovering and learning the regularities or patterns in
+                        input data in such a way that the model can be used to
+                        generate or output new examples that plausibly could
+                        have been drawn from the original dataset. It means
+                        that they are able to create (or generate) some new
+                        contents. To illustrate the term ‘Generative models’,
+                        we can consider some well-known examples obtained
+                        from GANs.
+                    </p>
+                    <div class="content-img-wrapper">
+                        <img src="gan2.png" class="content-img" />
+                        <p class="content-img-caption">
+                            <i>Generative Adversarial Networks for Human Faces.</i>
+                        </p>
+                    </div>
+                    <p class="content">
+                        Generative Adversarial Networks are an exciting and
+                        rapidly transforming field, delivering on the promise of
+                        generative models in their ability to generate realistic
+                        examples across a range of problems domain, most
+                        notably in image2image translation tasks, such as
+                        translating photos of horses to zebras, or replace
+                        another tone for a picture, etc.
+                    </p>
+                    <div class="content">
+                        <h5 class="subsub-title">Application of generative adversarial networks:</h5>
+                        <ul class="list">
+                            <li class="list-item">
+                                Generating examples for Image Dataset.
+                            </li>
+                            <li class="list-item">
+                                Generating photographs of human faces.
+                            </li>
+                            <li class="list-item">
+                                Generating realistic Photographs.
+                            </li>
+                            <li class="list-item">
+                                Image2Image translation.
+                            </li>
+                            <li class="list-item">
+                                Text2Image translation, etc.
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </section>
+            <section class="body">
+                <h2>Achievement</h2>
+            </section>
+        </article>
+        <div id="infomation">
+            <div class="author">
+                <h3 class="author-name">Lê Nguyễn Hoàng Nhân</h3>
+                <p class="author-intro">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet augue sit amet lacus mattis
+                    congue id eget mauris. Mauris turpis enim, rutrum vel imperdiet a, efficitur ac lectus. Proin et
+                    faucibus sapien. Nulla facilisi.
+                </p>
+
+                <h4 class="author-extra">Student ID</h4>
+                <p class="author-extra-content">
+                    2052625
+                </p>
+
+                <h4 class="author-extra">Education</h4>
+                <p class="author-extra-content">
+                    Ho Chi Minh University of Technology
+                </p>
+
+                <h4 class="author-extra">Location</h4>
+                <p class="author-extra-content">
+                    Ho Chi Minh City, Vietnam
+                </p>
+            </div>
+
+            <div class="author">
+                <h3 class="author-name">Nguyễn Hồ Quang</h3>
+                <p class="author-intro">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet augue sit amet lacus mattis
+                    congue id eget mauris. Mauris turpis enim, rutrum vel imperdiet a, efficitur ac lectus. Proin et
+                    faucibus sapien. Nulla facilisi.
+                </p>
+
+                <h4 class="author-extra">Student ID</h4>
+                <p class="author-extra-content">
+                    2052625
+                </p>
+
+                <h4 class="author-extra">Education</h4>
+                <p class="author-extra-content">
+                    Ho Chi Minh University of Technology
+                </p>
+
+                <h4 class="author-extra">Location</h4>
+                <p class="author-extra-content">
+                    Ho Chi Minh City, Vietnam
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
